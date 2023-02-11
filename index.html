@@ -12,11 +12,28 @@
 <body>
     <nav class="navbar navbar-light bg-light navbar-expand-sm">
         <a href="/" class="navbar-brand">Whiskey Drop</a>
-        <ul class="navbar-nav mr-auto">
-            <li class="active nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
-            <li class="nav-item mr-2"><a class="nav-link" href="/about">About</a></li>
-            <li class="nav-item mr-2 d-block d-sm-none"><a class="nav-link" href="/login">Sign In / Sign Up</a></li>
-        </ul>
+
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span></button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mr-auto">
+                <li class="active nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
+                <li class="nav-item mr-2"><a class="nav-link" href="/about">About</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Whiskeys</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Irish</a>
+                        <a class="dropdown-item" href="#">Scotch</a>
+                        <a class="dropdown-item" href="#">Japanese</a>
+                        <a class="dropdown-item" href="#">American</a>
+                    </div>
+                </li>
+                <li class="nav-item mr-2 d-block d-sm-none"><a class="nav-link" href="/login">Sign In / Sign Up</a></li>
+            </ul>
+        </div>
         <div class="d-none d-md-block">
             <p class="navbar-text my-auto mr-2"><i>Great whiskey delivered to your doorstep!</i></p>
             <a href="/login">Sign In / Sign Up</a>
@@ -26,7 +43,8 @@
         <div class="row">
             <div class="col-12">
                 <div class="alert alert-warning d-none d-sm-block">
-                    <strong>Sale Now On!</strong> We've got a sale on. Get a 12-month subscription for the price of 6! <a href="/">Click here for info!</a>
+                    <strong>Sale Now On!</strong> We've got a sale on. Get a 12-month subscription for the price of 6!
+                    <a href="/">Click here for info!</a>
                 </div>
             </div>
         </div>
@@ -41,7 +59,8 @@
                         <strong><mark>First one is free!</mark></strong>
                     </p>
                     <button class="btn btn-success btn-lg">Sign Up</button>
-                    <p class="text-muted"><small>You must be 18 or over to be able to make use of our services. Please drink responsibly.</small></p>
+                    <p class="text-muted"><small>You must be 18 or over to be able to make use of our services. Please
+                            drink responsibly.</small></p>
                 </section>
             </div>
         </div>
@@ -59,20 +78,23 @@
                 <div class="col-12 col-md-6">
                     <div class="media">
                         <div class="d-none d-sm-block">
-                            <img src="images/girl-image.png" class="rounded-circle mr-3" height="100" width="100" alt="an image of a women with a hat">
+                            <img src="images/girl-image.png" class="rounded-circle mr-3" height="100" width="100"
+                                alt="an image of a women with a hat">
                         </div>
-                            <div class="media-body">
-                                <blockquote class="blockquote">
-                                    <p>I've been introduced to more than 10 great international whiskeys I never knew about.</p>
-                                    <p>- Jane Doe</p>
-                                </blockquote>
-                            </div>
+                        <div class="media-body">
+                            <blockquote class="blockquote">
+                                <p>I've been introduced to more than 10 great international whiskeys I never knew about.
+                                </p>
+                                <p>- Jane Doe</p>
+                            </blockquote>
+                        </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-6">
                     <div class="media">
                         <div class="d-none d-sm-block">
-                            <img src="images/guy-image.png" class="rounded-circle mr-3" height="100" width="100" alt="an image of a man with a shades">
+                            <img src="images/guy-image.png" class="rounded-circle mr-3" height="100" width="100"
+                                alt="an image of a man with a shades">
                         </div>
                         <div class="media-body">
                             <blockquote class="blockquote">
@@ -97,7 +119,8 @@
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="feature">
-                        <h3><i class="fa-solid fa-gift d-none d-sm-block"></i> Feature 1 <span class="badge badge-success">NEW</span></h3>
+                        <h3><i class="fa-solid fa-gift d-none d-sm-block"></i> Feature 1 <span
+                                class="badge badge-success">NEW</span></h3>
                         <p>Placeholder</p>
                         <p><a class="bt btn-sm btn-light" href="">Read More</a></p>
                     </div>
@@ -124,43 +147,55 @@
         <div class="table-responsive my-5">
             <table class="table table-hover">
                 <thead>
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Origin</th>
-                </tr>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Origin</th>
+                    </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Jameson</td>
-                    <td>Ireland</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Midleton</td>
-                    <td>Ireland</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Chivas Regal</td>
-                    <td>Scotland</td>
-                </tr>
-                <tr>
-                    <th scope="row">4</th>
-                    <td>Paddy</td>
-                    <td>Ireland</td>
-                </tr>
-                <tr>
-                    <th scope="row">5</th>
-                    <td>Red Breast</td>
-                    <td>Ireland</td>
-                </tr>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Jameson</td>
+                        <td>Ireland</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Midleton</td>
+                        <td>Ireland</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Chivas Regal</td>
+                        <td>Scotland</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Paddy</td>
+                        <td>Ireland</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>Red Breast</td>
+                        <td>Ireland</td>
+                    </tr>
                 </tbody>
             </table>
         </div>
         <!-- /.Monthly favorites -->
     </article>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
